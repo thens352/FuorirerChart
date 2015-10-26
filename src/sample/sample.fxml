@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="422.0" prefWidth="572.0">
+         <children>
+            <CheckBox fx:id="sinusBilesenGoster" layoutX="373.0" layoutY="35.0" mnemonicParsing="false" text="Sinüs bileşenlerini göster" />
+            <TextField fx:id="frekansI" layoutX="83.0" layoutY="11.0" prefHeight="25.0" prefWidth="53.0" />
+            <TextField fx:id="harmonikI" layoutX="83.0" layoutY="43.0" prefHeight="25.0" prefWidth="53.0" />
+            <TextField fx:id="genlikI" layoutX="83.0" layoutY="74.0" prefHeight="25.0" prefWidth="53.0" />
+            <Label layoutX="28.0" layoutY="15.0" text="Frekans" />
+            <Label layoutX="28.0" layoutY="47.0" text="Harmonik" />
+            <Label layoutX="28.0" layoutY="78.0" text="Genlik" />
+            <LineChart fx:id="grafikL" layoutX="36.0" layoutY="124.0">
+              <xAxis>
+                <NumberAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Button fx:id="cizB" layoutX="186.0" layoutY="11.0" minWidth="70.0" mnemonicParsing="false" onAction="#cizAction" prefHeight="25.0" prefWidth="63.0" text="Çiz" />
+            <Button fx:id="temizleB" onAction="#temizleAction" layoutX="186.0" layoutY="43.0" minWidth="70.0" mnemonicParsing="false" text="Temizle" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
